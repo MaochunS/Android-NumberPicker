@@ -26,10 +26,6 @@ public class SNumberPicker extends NumberPicker {
         super(context, attrs, defStyleAttr);
     }
 
-    /**
-     * addView方法 ViewGroup
-     * */
-
     @Override
     public void addView(View child) {
         super.addView(child);
@@ -62,8 +58,8 @@ public class SNumberPicker extends NumberPicker {
 
     public void setNumberPickerView(View view) {
         if (view instanceof EditText) {
-            ((EditText) view).setTextColor(ContextCompat.getColor(getContext(), R.color.colorPrimary)); //字体颜色
-            ((EditText) view).setTextSize(20f);//字体大小
+            ((EditText) view).setTextColor(ContextCompat.getColor(getContext(), R.color.colorPrimary));
+            ((EditText) view).setTextSize(20f);
         }
     }
 
